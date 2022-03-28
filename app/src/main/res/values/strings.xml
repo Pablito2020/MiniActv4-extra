@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiniActv4Extra</string>
+    <string name="buleria_button">Buleria</string>
+    <string name="no_rompas_mas_button">No rompas mas</string>
+    <string name="senorita_button">Señorita</string>
+    <string name="stop_button">Detener</string>
+</resources>
