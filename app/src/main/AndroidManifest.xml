@@ -12,17 +12,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiniActv4Extra">
         <activity
-            android:name=".MainActivity"
+            android:name=".main.MainActivity"
             android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".pickable.ActionActivity"
+            android:exported="true">
+            <intent-filter>
                 <action android:name="android.intent.action.PICK" />
                 <data android:mimeType="audio/*" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".main.MusicService"
+            android:enabled="true"
+            android:exported="false" />
+
     </application>
 
 </manifest>
